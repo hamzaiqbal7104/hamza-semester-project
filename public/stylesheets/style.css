@@ -1,7 +1,7 @@
 body {
 	padding: 50px;
 	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-	background-color: rgb(164, 158, 243);
+	background-color: rgb(255, 255, 255);
 }
 :root {
 	--lg-color: linear-gradient(to right, blue, grey);
@@ -10,7 +10,7 @@ body {
 #e {
 	text-align: center;
 	font-weight: 600;
-	color: rgb(168, 70, 70);
-	background-color: rgb(107, 163, 144);
+	color: rgb(156, 235, 253);
+	background-color: rgb(1, 235, 203);
 	justify-content: center;
 }
