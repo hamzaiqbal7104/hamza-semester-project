@@ -42,6 +42,7 @@ app.use(function(err, req, res, next) {
 });
 //For LocalHost
 //mongodb://localhost/productscrud
+
 mongoose
   .connect("mongodb+srv://hamzaiqbal7104:hamza7104@@cluster0.osolw.mongodb.net/products?retryWrites=true&w=majority", {
     useNewUrlParser: true,
@@ -50,15 +51,4 @@ mongoose
   .then(() => console.log("Connected to Mongo...."))
   .catch((error) => console.log(error.message));
 
-/*
-  const MongoClient = require('mongodb').MongoClient;
-  const uri = "mongodb+srv://hamzaiqbal7104:hamza7104@@cluster0.osolw.mongodb.net/productscrud.products?retryWrites=true&w=majority";
-  const client = new MongoClient(uri, { useNewUrlParser: true }, { useUnifiedTopology: true });
-  client.connect(err => {
-    const collection = client.db("test").collection("devices");
-    // perform actions on the collection object
-    client.close();
-  });
-  
-*/
 module.exports = app;
