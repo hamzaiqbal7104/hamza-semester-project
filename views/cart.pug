@@ -7,6 +7,7 @@ block content
       thead
         th Name
         th Price
+        th Size
         th Actions
       tbody
         each item in cart
@@ -14,6 +15,7 @@ block content
           tr
             td=item.name
             td=item.price
+            td=item.size
             td
               a(href="/products/cart/remove/"+item._id, class="btn btn-danger") Remove Item
       tfoot

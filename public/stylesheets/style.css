@@ -1,16 +1,23 @@
 body {
 	padding: 50px;
 	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-	background-color: rgb(255, 255, 255);
+	background-color: #fce97d;
 }
+
+#Header{
+    background-color: #00ffff;
+    text-align: center;
+	padding: 50px;
+}
+
 :root {
-	--lg-color: linear-gradient(to right, blue, grey);
+	--lg-color: linear-gradient(to right, rgb(4, 255, 17), rgb(0, 0, 0));
 }
 
 #e {
 	text-align: center;
 	font-weight: 600;
 	color: rgb(156, 235, 253);
-	background-color: rgb(1, 235, 203);
+	background-color: #33ff00;
 	justify-content: center;
 }

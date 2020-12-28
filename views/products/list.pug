@@ -12,7 +12,7 @@ block content
                     th Name
                     th Price
                     th Size
-                    th Category
+                    th Quality
                     th Actions
             tbody
                 each product in products
@@ -20,7 +20,7 @@ block content
                         td=product.name
                         td=product.price
                         td=product.size
-                        td=product.category
+                        td=product.quality
                         td
                             a(href="/products/delete/"+product._id, class="btn btn-danger" ) Delete
                             a(href="/products/edit/"+product._id, class="btn btn-warning") Edit

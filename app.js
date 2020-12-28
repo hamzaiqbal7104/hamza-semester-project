@@ -40,9 +40,10 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
+//For LocalHost
+//mongodb://localhost/productscrud
 mongoose
-  .connect("mongodb+srv://hamzaiqbal7104:hamza7104@@cluster0.osolw.mongodb.net/productscrude?retryWrites=true&w=majority", {
+  .connect("mongodb+srv://hamzaiqbal7104:hamza7104@@cluster0.osolw.mongodb.net/productscrud?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
