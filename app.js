@@ -53,7 +53,7 @@ mongoose
 /*
   const MongoClient = require('mongodb').MongoClient;
   const uri = "mongodb+srv://hamzaiqbal7104:hamza7104@@cluster0.osolw.mongodb.net/productscrud.products?retryWrites=true&w=majority";
-  const client = new MongoClient(uri, { useNewUrlParser: true });
+  const client = new MongoClient(uri, { useNewUrlParser: true }, { useUnifiedTopology: true });
   client.connect(err => {
     const collection = client.db("test").collection("devices");
     // perform actions on the collection object
